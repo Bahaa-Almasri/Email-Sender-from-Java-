@@ -43,7 +43,7 @@ public class SendingEmailToDr {
         email.setSmtpPort(465);
 
         // Set Gmail credentials (user name and password)
-        String username = "bahaaalmasri2005@gmail.com";
+        String username = "";
         
         // For privacy purposes, I have used encapsulation for the password  
         String password = SendingEmailToDrReal.getPassCode();
@@ -52,30 +52,14 @@ public class SendingEmailToDr {
         email.setAuthenticator(new DefaultAuthenticator(username, password));
 
         // Add recipient's and sender's information
-        email.addTo("barackobamaandme85@gmail.com", "Dr. Wissam Fawaz");  
-        email.setFrom("bahaaalmasri2005@gmail.com", "Bahaa Almasri");
+        email.addTo("barackobama@gmail.com", "Barack Obama");  
+        email.setFrom("YourEmail@gmail.com", "Your Name");
         
         // Set the email subject 
         email.setSubject("Sending an Email using the Apache Commons commons-email Library");
         
         // Set the message of the email 
-        email.setMsg("Dear Dr. Wissam Fawaz,\r\n"
-        		+ "\r\n"
-        		+ "I hope this message finds you well and that you can spare a moment to read this brief note. \r\n"
-        		+ "\r\n"
-        		+ " My name is Bahaa Almasri, and I am currently a second-year computer engineering student. \r\n"
-        		+ "\r\n"
-        		+ "Over the past two years, I have not only achieved academic excellence, but also have dedicated myself to developing essential skill sets that I believe are crucial for a successful career in our field. In particular, I have focused on web development, communication skills, and leadership abilities.\r\n"
-        		+ "\r\n"
-        		+ "In the realm of web development, I have gained hands-on experience working with HTML, CSS, and JavaScript. I've had the opportunity to work on many projects, my 2 favorites being: \r\n"
-        		+ " 1- A website for an event about Sustanable Energy between the United Kingdom and Mauritania that has been created but not published yet.\r\n"
-        		+ " 2- A movie database website that I prepared to present in an upcoming event, that uses multiple APIs, this is the link if you want to check it out: https://moviedatabasex.000webhostapp.com/.\r\n"
-        		+ "\r\n"
-        		+ "Thank you for your time. I look forward to the content of this course and, more importantly, the knowledge and experience you enrich our class with.\r\n"
-        		+ "\r\n"
-        		+ "Please reply to this email so that I know it has been sent.\r\n"
-        		+ "\r\n"
-        		+ "Kindly find below the attached java code that I wrote to send you this email with the attachment.");
+        email.setMsg("");
 
         // Add the attachment
         email.attach(attachment);
