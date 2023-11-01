@@ -1,6 +1,6 @@
 import org.apache.commons.mail.*;
 
-public class SendingEmailToDr {
+public class SendingEmail {
     public static void main(String[] args) {
         try {
             // Create the email with attachment
@@ -30,7 +30,7 @@ public class SendingEmailToDr {
         attachment.setDescription("Java File of the Project");
         
         //Set the name of the file
-        attachment.setName("SendingEmailToDr Java File");
+        attachment.setName("SendingEmail Java File");
 
         // Create the email message that includes the message with the attachment
         MultiPartEmail email = new MultiPartEmail();
@@ -46,7 +46,7 @@ public class SendingEmailToDr {
         String username = "";
         
         // For privacy purposes, I have used encapsulation for the password  
-        String password = SendingEmailToDrReal.getPassCode();
+        String password = SendingEmailReal.getPassCode();
 
         // From JavaMail API
         email.setAuthenticator(new DefaultAuthenticator(username, password));
