@@ -1,5 +1,5 @@
 
-public class SendingEmailToDrReal {
+public class SendingEmailReal {
 
 	// get the code from your Gmail  
 	private static String passcode = "";
